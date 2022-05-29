@@ -186,7 +186,7 @@ SELECT ce.emp_no,
 ce.first_name,
 ce.last_name,
 d.dept_name
-INTO deptsales_info
+--INTO deptsales_info
 FROM current_emp AS ce
 INNER JOIN dept_emp AS de
 ON (ce.emp_no = de.emp_no)
@@ -199,7 +199,7 @@ SELECT ce.emp_no,
 ce.first_name,
 ce.last_name,
 d.dept_name
-INTO deptsalesdevelopment_info
+--INTO deptsalesdevelopment_info
 FROM current_emp AS ce
 INNER JOIN dept_emp AS de
 ON (ce.emp_no = de.emp_no)
@@ -222,6 +222,8 @@ ON (e.emp_no = ti.emp_no)
 WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 ORDER BY e.emp_no ASC;
 
+SELECT * FROM retirement_titles
+
 -- Use Distinct with Orderby to remove duplicate rows
 SELECT DISTINCT ON (e.emp_no)
 	e.emp_no,
@@ -238,9 +240,30 @@ WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 AND (ti.to_date = '9999-01-01')
 ORDER BY e.emp_no ASC;
 
+SELECT * FROM unique_titles
+
 -- Retiring employee count by title
 SELECT COUNT(ut.title), ut.title
 INTO retiring_titles
 FROM unique_titles as ut
 GROUP BY ut.title 
 ORDER BY COUNT(ut.title) DESC;
+
+-- Create list of employees eligible for mentorship program
+SELECT DISTINCT ON (e.emp_no)
+	e.emp_no,
+	e.first_name,
+	e.last_name,
+	e.birth_date,
+	de.from_date,
+	de.to_date,
+	ti.title
+INTO mentorship_elgibility
+FROM employees AS e
+LEFT JOIN dept_emp AS de
+ON (e.emp_no = de.emp_no)
+INNER JOIN titles AS ti
+ON (e.emp_no = ti.emp_no)
+WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+AND (ti.to_date = '9999-01-01')
+ORDER BY e.emp_no ASC;
