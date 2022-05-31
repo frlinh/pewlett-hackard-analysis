@@ -23,6 +23,6 @@ A total of 72,458 roles will have to be filled as the "silver tsunami" begins to
 - The department that would be most affected by the "silver tsunami" is the Development department
 - The department that would be least affected by the "silver tsunami" is the Finance department
 
-### Total salary retiring by Title
+### Total retiring salary by Title
 ![Retiring_Salary](https://github.com/frlinh/pewlett-hackard-analysis/blob/dca770c74f6d9aed900c6332f42c18c2a1a6740a/retiring_salary.png)
 - The total retiring salary for all departments is $3,833,741,608
