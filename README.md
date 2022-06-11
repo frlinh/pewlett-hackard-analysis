@@ -5,7 +5,7 @@ Performed data analysis on employee data at Pewlett-Hackard to determine the num
 
 ## Resources
 - Data Source: departments.csv, dept_emp.csv, dept_manager.csv, employees.csv, salaries.csv, titles.csv
-- Software: SQL, PostgreSQL, pgAdmin
+- Software: SQL, PostgreSQL, pgAdmin4
 
 ## Summary
 A total of 72,458 roles will have to be filled as the "silver tsunami" begins to make an impact on the company.
