@@ -1,7 +1,11 @@
 # An Analysis of Pewlett-Hackard's Employee Data
 
 ## Project Overview
-Performed data analysis on employee data to determine the number of employees eligible for retirement and the number of employees eligible for the mentorship program.
+Performed data analysis on employee data at Pewlett Hackard to determine the number of employees eligible for retirement and the number of employees eligible for the mentorship program.
+
+## Resources
+Data Source: departments.csv, dept_emp.csv, dept_manager.csv, employees.csv, salaries.csv, titles.csv
+Software: SQL, PostgreSQL, pgAdmin
 
 ## Summary
 A total of 72,458 roles will have to be filled as the "silver tsunami" begins to make an impact on the company.
