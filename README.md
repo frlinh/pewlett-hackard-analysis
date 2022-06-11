@@ -1,7 +1,7 @@
 # An Analysis of Pewlett-Hackard's Employee Data
 
 ## Project Overview
-Performed data analysis on employee data at Pewlett Hackard to determine the number of employees eligible for retirement and the number of employees eligible for the mentorship program.
+Performed data analysis on employee data at Pewlett-Hackard to determine the number of employees eligible for retirement and the number of employees eligible for the mentorship program.
 
 ## Resources
 Data Source: departments.csv, dept_emp.csv, dept_manager.csv, employees.csv, salaries.csv, titles.csv
