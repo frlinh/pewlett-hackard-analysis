@@ -3,11 +3,6 @@
 ## Project Overview
 Performed data analysis on employee data at Pewlett-Hackard to determine the number of employees eligible for retirement and the number of employees eligible for the mentorship program.
 
-## Resources
-Data Source: departments.csv, dept_emp.csv, dept_manager.csv, employees.csv, salaries.csv, titles.csv
-
-Software: SQL, PostgreSQL, pgAdmin
-
 ## Summary
 A total of 72,458 roles will have to be filled as the "silver tsunami" begins to make an impact on the company.
 
@@ -31,3 +26,8 @@ A total of 72,458 roles will have to be filled as the "silver tsunami" begins to
 ### Total retiring salary by Title
 ![Retiring_Salary](https://github.com/frlinh/pewlett-hackard-analysis/blob/dca770c74f6d9aed900c6332f42c18c2a1a6740a/retiring_salary.png)
 - The total retiring salary for all departments is $3,833,741,608
+
+## Resources
+Data Source: departments.csv, dept_emp.csv, dept_manager.csv, employees.csv, salaries.csv, titles.csv
+
+Software: SQL, PostgreSQL, pgAdmin
