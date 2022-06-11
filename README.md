@@ -5,6 +5,7 @@ Performed data analysis on employee data at Pewlett-Hackard to determine the num
 
 ## Resources
 Data Source: departments.csv, dept_emp.csv, dept_manager.csv, employees.csv, salaries.csv, titles.csv
+
 Software: SQL, PostgreSQL, pgAdmin
 
 ## Summary
